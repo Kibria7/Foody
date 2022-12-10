@@ -2,4 +2,259 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
 }
+
+/* Global Styling */
+.global{
+    margin: 0 50px;
+}
+.h-marg {
+    margin-top: 40px;
+}
+.h-pad{
+    padding: 0 110px;
+}
+.v-pad{
+    padding-top: 30px;
+}
+
+/* Header Styling */
+.header{
+    background-color: rgb(243, 244, 246);
+    min-height: 900px;
+}
+/* Navbar Styling */
+.navbar{
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+}
+.navbar .nav-list ul{
+    display: flex;
+    list-style: none;
+    margin-left: 120px;
+}
+.navbar .nav-list ul li a{
+    text-decoration: none;
+    color: rgb(133, 134, 136);
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar .nav-list ul li:nth-child(n+1){
+    margin-left: 50px;
+}
+.navbar .nav-list .selected{
+    color: rgb(54, 54, 54);
+}
+
+.button {
+    margin-left: auto;
+    text-align: center;
+    /* width: 120px; */
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 145, 77);
+    font-size: 18px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Main banner */
+.main-banner{
+    display: flex;
+    /* background-color: red; */
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+/* Left main banner */
+.main-banner .left{
+    padding: 110px 0;
+}
+.main-banner .left h1{
+    font-size: 60px;
+    columns: rgb(37, 35, 36);
+}
+.main-banner .left p{
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 1.2;
+}
+.buttons{
+    display: flex;
+    margin-top: 45px;
+}
+.buttons .button{
+    margin-left: 0px;
+    padding: 23px 45px 18px 45px;
+}
+.buttons .button:nth-child(2) {
+    margin-left: 35px;
+    border: 2px solid rgb(87, 87, 89);
+    background-color: transparent;
+}
+.dark a{
+    color: rgb(87, 87, 89);
+}
+
+/* Right main banner */
+.main-banner .right {
+    width: 500px;
+    height: 650px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    position: relative;
+}
+.main-banner .right-img{
+    width: 500px;
+    height: 650px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 1px rgb(189, 183, 183);
+}
+.main-banner .right img{
+    max-width: 100%;
+}
+.tom-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 17px 20px;
+    padding-right: 25px;
+    border-radius: 10px;
+    top: 370px;
+    left: -135px;
+    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+}
+.tom-card .profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(128, 122, 122);
+}
+.tom-card .profile img{
+    width: 100%;
+}
+.tom-card .text-1 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(77, 78, 81);
+    margin-left: 20px;
+    line-height: 1.2;
+}
+.tom-card i{
+    color: rgb(77, 78, 81);
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: -30px;
+    margin-left: -2px;
+}
+.delivery-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    position: absolute;
+    padding: 20px 25px 20px 15px;
+    border-radius: 10px;
+    top: 200px;
+    left: 335px;
+    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+}
+
+.delivery-card .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(128, 122, 122);
+}
+
+.delivery-card .profile img {
+    width: 100%;
+}
+
+.delivery-card .text-1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 78, 81);
+    margin-left: 15px;
+    line-height: 1.2;
+}
+
+.barger-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    position: absolute;
+    padding: 20px 20px 40px 20px;
+    border-radius: 10px;
+    top: 550px;
+    left: 200px;
+    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+}
+
+.barger-card .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.barger-card .profile img {
+    width: 100%;
+}
+.barger-card .text-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+    min-height: 80px;
+}
+.barger-card .text-1 h1{
+    font-size: 20px;
+    color: rgb(77, 78, 81);
+}
+.barger-card .text-1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 78, 81);
+    line-height: 1.2;
+    font-weight: 600;
+}
+.rating i{
+    font-size: 9px;
+    color: rgb(219, 186, 3);
+}
+
+
+/* Main */
+.main{
+    height: 600px;
+}
+
+/* Feature */
