@@ -258,3 +258,11 @@
 }
 
 /* Feature */
+.feat-card .feat-card-img{
+    width: 200px;
+    height: 165px;
+    overflow: hidden;
+}
+.feat-card-img img{
+    width: 100%;
+}
