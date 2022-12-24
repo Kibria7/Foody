@@ -25,6 +25,9 @@
     min-height: 900px;
 }
 /* Navbar Styling */
+.nav-img{
+    cursor: pointer;
+}
 .navbar{
     display: flex;
     min-height: 80px;
@@ -56,6 +59,7 @@
     border-radius: 30px;
     background-color: rgb(255, 145, 77);
     font-size: 18px;
+    cursor: pointer;
 }
 
 .button a {
@@ -137,7 +141,7 @@
     border-radius: 10px;
     top: 370px;
     left: -135px;
-    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+    box-shadow: 0px 10px 20px .5px rgba(90, 80, 80, 0.097);
 }
 .tom-card .profile{
     width: 60px;
@@ -174,7 +178,7 @@
     border-radius: 10px;
     top: 200px;
     left: 335px;
-    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+    box-shadow: 0px 10px 20px .5px rgba(90, 80, 80, 0.097);
 }
 
 .delivery-card .profile {
@@ -209,7 +213,7 @@
     border-radius: 10px;
     top: 550px;
     left: 200px;
-    box-shadow: 0px 0px 10px .5px rgb(131, 122, 122);
+    box-shadow: 0px 10px 20px .5px rgba(90, 80, 80, 0.097);
 }
 
 .barger-card .profile {
@@ -254,15 +258,400 @@
 
 /* Main */
 .main{
-    height: 600px;
+    min-height: 600px;
+    margin-bottom: 60px;
 }
 
 /* Feature */
-.feat-card .feat-card-img{
-    width: 200px;
-    height: 165px;
-    overflow: hidden;
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    min-height: 650px;
 }
+.feat-text{
+    text-align: center;
+}
+.feat-text h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 15px;
+    color: rgb(1, 1, 1);
+}
+.feat-text p {
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(117, 116, 121);
+}
+.feat-card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 45px;
+}
+.feat-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    padding: 30px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: box-shadow .4s;
+    cursor: pointer;
+}
+.feat-card:hover{
+    box-shadow: 0px 25px 25px .5px rgba(215, 206, 206, 0.258);
+}
+.shad {
+    box-shadow: 0px 25px 25px .5px rgba(215, 206, 206, 0.258);
+}
+.feat-card .feat-card-img{
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .feat-card-img img{
     width: 100%;
+    margin-top: -20px;
+}
+
+.feat-card-text{
+    padding: 10px;
+    text-align: center;
+}
+.feat-card-text h1{
+    color: rgb(34, 34, 36);
+    font-size: 25px;
+    font-weight: 600;
+}
+.feat-card-text p {
+    color: rgb(145, 145, 145);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+/* Popular Offer Section */
+.popular .feat-text{
+    margin-bottom: 40px;
+}
+.popular .feat-text h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.1;
+}
+.popular-card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 40px 200px;
+}
+.popular .popular-card-container .feat-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    transition: box-shadow .4s;
+}
+.popular .popular-card-container .feat-card:hover{
+    box-shadow: 0px 25px 25px 1px rgba(215, 206, 206, 0.371);
+    border: none;
+}
+.popular-card-container .feat-card-text{
+    text-align: start;
+    padding: 0px 20px;
+}
+.popular-card-container .feat-card-text h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.popular-card-container .rating {
+    margin: 11px 0px;
+}
+.popular-card-container .rating i{
+    font-size: 12px;
+}
+.popular-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.popular-price .button{
+    padding: 7px 8px 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.popular-price .button i{
+    color: rgb(255, 237, 183);
+    font-size: 16px;
+}
+
+
+
+/* Pricing Section Design */
+.pricing{
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+.price-header{
+    text-align: center;
+    margin-bottom: 200px;
+}
+.price-header h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 15px;
+    color: rgb(1, 1, 1);
+}
+.price-header p{
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(117, 116, 121);
+}
+.price-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.price-img{
+    position: absolute;
+    z-index: -1;
+}
+.price-card{
+    width: 340px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 45px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 20px 20px 1px rgba(215, 206, 206, 0.134);
+}
+.price-card h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.price-card .price-card-p{
+    font-size: 18px;
+    color: rgb(157, 157, 157);
+    margin-bottom: 15px;
+}
+.price-card .num{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.price-card p{
+    color: rgb(87, 88, 90);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.price-button{
+    background-color: rgb(240, 237, 244);
+    padding: 20px 70px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.price-button a{
+    text-decoration: none;
+    color: rgb(181, 21, 28);
+    font-size: 18px;
+}
+
+.price-card-dark {
+    width: 340px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 45px;
+    border-radius: 30px;
+    background-color: rgb(25, 28, 35);
+    box-shadow: 0px 20px 20px 1px rgba(215, 206, 206, 0.134);
+    margin-left: 50px;
+}
+
+.price-card-dark h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(254, 255, 255);
+}
+
+.price-card-dark .price-card-p {
+    font-size: 18px;
+    color: rgb(157, 157, 157);
+    margin-bottom: 15px;
+}
+
+.price-card-dark .num {
+    font-size: 55px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 254);
+}
+
+.price-card-dark p {
+    color: rgb(134, 137, 142);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.price-button-dark {
+    background-color: rgb(215, 0, 7);
+    padding: 20px 70px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.price-button-dark a {
+    text-decoration: none;
+    color: rgb(254, 220, 230);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background-color: rgb(24, 22, 23);
+    position: relative;
+    margin-top: 200px;
+}
+.footer-hover-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    min-height: 200px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -150px;
+    padding: 40px 0px;
+}
+
+.footer-hover-banner h1{
+    color: rgb(248, 248, 250);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+}
+.footer-hover-banner .button{
+    padding-top: 17px;
+    padding-bottom: 16px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.footer-hover-banner .button a{
+    font-size: 18px;
+}
+.footer-hover-banner .lower{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: -90px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+    margin: 0px 290px;
+    padding-top: 180px;
+}
+
+.logos {
+    width: 40%;
+}
+.footer-p {
+    color: rgb(127, 128, 130);
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    line-height: 1.5;
+}
+
+.info {
+    width: 15%;
+    padding: 10px;
+}
+
+.info h1 {
+    font-size: 20px;
+    color: rgb(250, 248, 251);
+    margin-bottom: 21px;
+    cursor: pointer;
+}
+
+.info p {
+    color: rgb(127, 128, 130);
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    cursor: pointer;
+}
+
+.footer .footer-socials {
+    display: flex;
+}
+
+.footer .circle {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(24, 22, 23);
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(252, 132, 58, 0.816);
+    cursor: pointer;
+}
+
+.footer .circle:nth-child(2) {
+    background-color: rgb(244, 116, 36);
+}
+
+.circle i {
+    color: rgb(244, 116, 36);
+    font-size: 20px;
+}
+.circle i:nth-child(1) {
+    color: rgb(255, 255, 255);
+}
+
+.footer-img {
+    margin-bottom: 10px;
+    cursor: pointer;
 }
