@@ -403,6 +403,138 @@
 
 
 
+
+
+/* Service Section Design */
+.service{
+    height: 1150px;
+    padding: 80px 0px;
+    background-color: rgb(249, 250, 252);
+    position: relative;
+}
+.service-header {
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-bottom: 200px;
+    position: absolute;
+    z-index: 4;
+}
+
+.service-header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 15px;
+    color: rgb(1, 1, 1);
+}
+
+.service-header p {
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(117, 116, 121);
+}
+.service-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.service-img {
+    top: 65px;
+    position: absolute;
+    z-index: 1;
+}
+.service-cards-inner-container{
+    position: absolute;
+    height: 870px;
+    z-index: 9;
+    display: flex;
+    top: 0;
+    margin-top: 200px;
+}
+.service-cards-left{
+    display: flex;
+    flex-direction: column;
+}
+.service-cards-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 40px;
+}
+.service-card{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 1px rgba(195, 183, 170, 0.152);
+    position: relative;
+}
+.service-img-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: absolute;
+    top: -50px;
+    left: 140px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px rgba(195, 183, 170, 0.152);
+}
+.service-img-container img{
+    width: 100%;
+}
+.service-cards-left .service-card{
+    width: 330px;
+    height: 270px;
+    border-radius: 35px;
+    margin-bottom: 100px;
+}
+.service-cards-right .service-card {
+    width: 330px;
+    height: 270px;
+    border-radius: 35px;
+    margin-bottom: 100px;
+}
+.service-card h1{
+    font-weight: 600;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+.service-card .rating{
+    margin-bottom: 15px;
+}
+.service-card .rating i{
+    font-size: 12px;
+}
+.service-card .rating i:nth-child(n+2){
+    margin-left: 3px;
+}
+.service-price{
+    display: flex;
+    justify-content: space-between;
+}
+.service-price h1{
+    font-weight: 500;
+    font-size: 27px;
+}
+.service-plus{
+    margin-top: -22px;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(250, 147, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(255, 251, 212);
+}
+
+
+
+
 /* Pricing Section Design */
 .pricing{
     height: 800px;
@@ -471,6 +603,7 @@
     border-radius: 30px;
     margin-top: 50px;
     margin-left: 15px;
+    cursor: pointer;
 }
 .price-button a{
     text-decoration: none;
@@ -493,7 +626,7 @@
 
 .price-card-dark h1 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 5px;
     color: rgb(254, 255, 255);
 }
@@ -522,6 +655,7 @@
     border-radius: 30px;
     margin-top: 50px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .price-button-dark a {
@@ -529,8 +663,6 @@
     color: rgb(254, 220, 230);
     font-size: 18px;
 }
-
-
 
 
 
